@@ -11,6 +11,24 @@
 |
 */
 
+// This is the default loading location
 Route::get('/', function () {
     return view('welcome');
+});
+
+// This is the API code
+Route::get('SendMakeModel', function () {
+	$email = Input::get('email');
+	$make = Input::get('make');
+	$model = Input::get('model');
+
+
+
+	return view('makemodelapi',
+			[
+				'email' => $email,
+				'make' => $make,
+				'model' => $model
+			]
+		);
 });
