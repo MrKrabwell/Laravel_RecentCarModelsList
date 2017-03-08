@@ -26,7 +26,8 @@
             }
 
             .flex-center {
-                align-items: center;
+                /*align-items: center;*/
+                align-items: baseline;
                 display: flex;
                 justify-content: center;
             }
