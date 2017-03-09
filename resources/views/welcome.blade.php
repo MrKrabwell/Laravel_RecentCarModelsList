@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Welcome</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -209,6 +209,8 @@
         </style>
     </head>
 
+    
+
 <!-- All the things I care about starts here: -->    
     <body>
         <div class="flex-center position-ref full-height">
@@ -231,7 +233,9 @@
                 <!-- Form to submit information.  From CodePen http://codepen.io/rexkirby/pen/Fdnlz?editors=1100 -->
                 <div id="form-main">
                     <div id="form-div">
-                        <form class="form" id="form1" action="SendMakeModel", method="post">
+                        <form class="form" id="form1" action="MakeModel" method="POST">
+
+                            {{ csrf_field() }}
 
                             <p class="email">
                                 <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
@@ -248,7 +252,7 @@
 
                             <div class="submit">
                                 <input type="submit" value="SEND" id="button-blue"/>
-                            <div class="ease"></div>
+                            </div>
                         </form>
                     </div>
                 </div>
